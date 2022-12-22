@@ -1,8 +1,11 @@
 const rapid = (myString) => {
     let consonants = [];
-    for(let letter of myString){
-        if(['a','e','i','o','u'].includes(letter) == false)
-            consonants.push(letter)
+    for (let letter of myString) {
+        if (['a', 'e', 'i', 'o', 'u'].includes(letter) == false) {
+            consonants.push(letter.toUpperCase());
+
+        }
+
     }
     return consonants.join('');
 };
